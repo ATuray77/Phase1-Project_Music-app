@@ -77,3 +77,7 @@ button[type="submit"]:hover {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
+#playlist li:hover {
+  background-color: #e6e6e6;
+}
