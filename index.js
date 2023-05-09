@@ -34,7 +34,7 @@ fetch("http://localhost:3000/songs")
     cardButton.id = song.id;
     cardButton.textContent = "Like ❤️";
 
-    //card.append(h2, img, cardButton)
+    card.append(h2, img, cardButton)
 
 
   }
