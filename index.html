@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./index.js">
+  <title>My Music Library App</title>
 </head>
 <body>
+  <header id="menu">
+    <h1>My Fabulous Music Library</h1>
+  </header>
+  <div class="container">
+    <section>
+      <form id="song-form">
+        <label for="song">Song Title</label>
+        <input type="text" id="song" name="song" placeholder="Enter song name">
+
+        <label for="artist">Artist Name</label>
+        <input type="text" id="artist" name="artist" placeholder="Enter artist/band name">
+
+        <label for="youtubeID">Song URL</label>
+        <input type="text" id="youtubeID" name="youtubeID" placeholder="Enter YouTube link ID">
+
+        <button type="submit">Create Playlist</button>
+        <button type="submit">Add Song to Library</button>
+      </form>
+
+     <ul id="playlist"></ul>
+     <!--populated by 'Create Playlist'-->
+    </section>
+
+  </div>
   
 </body>
 </html>
