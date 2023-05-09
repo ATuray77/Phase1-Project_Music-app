@@ -69,3 +69,11 @@ button[type="submit"]:hover {
   list-style: none;
   padding: 0;
 }
+
+#playlist li {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
