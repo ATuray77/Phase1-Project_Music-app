@@ -47,4 +47,17 @@ fetch("http://localhost:3000/songs")
 
   }
   
-  
+  function updateLikes(id, newNumberOfLikes) {
+    fetch(`http://localhost:3000/songs/${id}`, { 
+    method: "PATCH",
+    headers:
+    {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    
+    body: JSON.stringify({
+      "likes": newNumberOfLikes
+    })
+      })
+    }
