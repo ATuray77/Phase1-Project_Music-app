@@ -21,6 +21,8 @@ fetch("http://localhost:3000/songs")
     img.src = song.image
     img.classList.add("tubeLink")
   
+    let pLikes = document.createElement("p")
+    pLikes.textContent = `${song.likes} likes`
 
   }
   
