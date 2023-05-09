@@ -5,35 +5,35 @@
       "name": "Holy are you Lord",
       "artist": "Terry MacAlmon",
       "image": "https://youtu.be/lJzt-hZyCMs",
-      "likes": "11"
+      "likes": "0"
     },
     {
       "id": 2,
       "name": "My Response",
       "artist": "Phil Thompson",
       "image": "https://youtu.be/C0I59GlCCWs",
-      "likes": "111"
+      "likes": "0"
     },
     {
       "id": 3,
       "name": "Adonai",
       "artist": "Nathaniel Bassey",
       "image": "https://youtu.be/l99fn9OdIvQ",
-      "likes": "11"
+      "likes": "0"
     },
     {
       "id": 4,
       "name": "Way Maker",
       "artist": "Sinach",
       "image": "https://youtu.be/n4XWfwLHeLM",
-      "likes": "1"
+      "likes": "0"
     },
     {
       "id": 5,
       "name": "Jesus At The Center",
       "artist": "Eben",
       "image": "https://youtu.be/_GzvFn-oyII",
-      "likes": "1"
+      "likes": "0"
     }
   ]
 }
