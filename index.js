@@ -13,6 +13,6 @@ fetch("http://localhost:3000/songs")
     let card = document.createElement("div")
     card.classList.add("card")
     
-    // let h2 = document.createElement("h2")
+    let h2 = document.createElement("h2")
     // h2.textContent = song.name
   }
