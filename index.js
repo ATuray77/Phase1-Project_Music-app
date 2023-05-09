@@ -8,3 +8,11 @@ fetch("http://localhost:3000/songs")
      // createCardElement(song)
     })
   })
+
+  const createCardElement = (song) => {
+    let card = document.createElement("div")
+    card.classList.add("card")
+    
+    // let h2 = document.createElement("h2")
+    // h2.textContent = song.name
+  }
