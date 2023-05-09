@@ -24,5 +24,8 @@ fetch("http://localhost:3000/songs")
     let pLikes = document.createElement("p")
     pLikes.textContent = `${song.likes} likes`
 
+    let cardButton = document.createElement("button")
+    
+
   }
   
