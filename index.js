@@ -17,6 +17,9 @@ fetch("http://localhost:3000/songs")
     let h2 = document.createElement("h2")
     h2.textContent = song.name
 
+    let h3 = document.createElement("h3")
+    h3.textContent = song.artist
+
     let img = document.createElement("img")
     img.src = song.image
     img.classList.add("tubeLink")
@@ -34,8 +37,9 @@ fetch("http://localhost:3000/songs")
     cardButton.id = song.id;
     cardButton.textContent = "Like ❤️";
 
-    card.append(h2, img, cardButton)
+    card.append(h2, h3, img, cardButton)
     document.getElementById("song-collection").appendChild(card)
+    //document.getElementById("card_container").appendChild("song-collection")
 
 
   }
