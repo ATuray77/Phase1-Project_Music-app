@@ -35,6 +35,7 @@ fetch("http://localhost:3000/songs")
     cardButton.textContent = "Like ❤️";
 
     card.append(h2, img, cardButton)
+    document.getElementById("song-collection").appendChild(card)
 
 
   }
