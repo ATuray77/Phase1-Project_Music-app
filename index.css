@@ -47,3 +47,14 @@ input[type="text"] {
   border-radius: 5px;
   margin-bottom: 20px;
 }
+
+button[type="submit"] {
+  display: block;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
