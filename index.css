@@ -11,3 +11,10 @@ body {
   flex-direction: column;
   float: left;
 }
+
+.card_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  float: right;
+}
