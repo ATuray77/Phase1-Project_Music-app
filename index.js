@@ -19,7 +19,7 @@ fetch("http://localhost:3000/songs")
 
     let img = document.createElement("img")
     img.src = song.image
-    img.classList.add(tubeLink)
+    img.classList.add("tubeLink")
   
 
   }
