@@ -44,9 +44,9 @@ fetch("http://localhost:3000/songs")
     document.getElementById("song-collection").appendChild(card)
     //document.getElementById("card_container").appendChild("song-collection")
 
-
   }
   
+  //function to updates likes (PATCH)
   function updateLikes(id, newNumberOfLikes) {
     fetch(`http://localhost:3000/songs/${id}`, { 
     method: "PATCH",
@@ -61,3 +61,8 @@ fetch("http://localhost:3000/songs")
     })
       })
     }
+
+    //Creates a playlist of songs to play in the player
+    const form = document.querySelector("#song-form")
+    const playList = document.querySelector("playlist")
+    const player = document.querySelector("#player")
