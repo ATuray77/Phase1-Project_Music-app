@@ -25,7 +25,17 @@ fetch("http://localhost:3000/songs")
     pLikes.textContent = `${song.likes} likes`
 
     let cardButton = document.createElement("button")
-    
+
+    //will come back to this when adding event listener to update likes
+    // cardButton.addEventListener('click', () => {
+
+    // })
+    cardButton.classList.add("like-btn");
+    cardButton.id = song.id;
+    cardButton.textContent = "Like ❤️";
+
+    //card.append(h2, img, cardButton)
+
 
   }
   
