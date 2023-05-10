@@ -66,3 +66,11 @@ fetch("http://localhost:3000/songs")
     const form = document.querySelector("#song-form")
     const playList = document.querySelector("playlist")
     const player = document.querySelector("#player")
+
+    //adds eventlistener to the form
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      const formData = Object.fromEntries(new formData(e.target))
+
+
+    })
