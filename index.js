@@ -83,7 +83,7 @@ function sendToDB(newSong) {
       "likes": 0
     })
   }).then((res) => res.json())
-    .then(resSong => console.log(resSong))//createCardElement(resSong))
+    .then(resSong => createCardElement(resSong))
  }
 //Everything works above, now working on below
 
