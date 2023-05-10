@@ -29,7 +29,7 @@ const createCardElement = (song) => {
 
   let cardButton = document.createElement("button");
 
-  //will come back to this when adding event listener to update likes
+  //Adds an event listener to the card button with a callback that increases
   cardButton.addEventListener("click", () => {
     pLikes.textContent = `${(song.likes += 1)} likes`;
     updateLikes(song.id, song.likes);
@@ -95,4 +95,9 @@ function sendToDB(newSong) {
   //grabs song name and artist name from input
   span.textContent = `${song.name} - ${song.artist}`;
   deleteBtn.textContent = "🗑️";
+  //adds event listener to the span
+  li.addEventListener("click", () => {
+    player.src = `https://www.youtube.com/embed/${song.youtubeID}`;
+  });
+
  }
