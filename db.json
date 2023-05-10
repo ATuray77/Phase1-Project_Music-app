@@ -5,7 +5,7 @@
       "name": "Holy are you Lord",
       "artist": "Terry MacAlmon",
       "image": "https://youtu.be/lJzt-hZyCMs",
-      "likes": 0
+      "likes": 5
     },
     {
       "id": 2,
@@ -19,42 +19,28 @@
       "name": "Adonai",
       "artist": "Nathaniel Bassey",
       "image": "https://youtu.be/l99fn9OdIvQ",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 4,
       "name": "Way Maker",
       "artist": "Sinach",
       "image": "https://youtu.be/n4XWfwLHeLM",
-      "likes": 0
+      "likes": 1
     },
     {
       "id": 5,
       "name": "Jesus At The Center",
       "artist": "Eben",
       "image": "https://youtu.be/_GzvFn-oyII",
-      "likes": 0
+      "likes": 3
     },
     {
-      "song": "Thank You Lord",
-      "artist": "Don Moen",
-      "youtubeID": "DN3_tSDhDpY",
-      "Likes": 0,
+      "song": "Goodness of God",
+      "artist": "CeCe Winans",
+      "youtubeID": "9sE5kEnitqE",
+      "likes": 0,
       "id": 6
-    },
-    {
-      "song": "Thank You Lord",
-      "artist": "Don Moen",
-      "youtubeID": "DN3_tSDhDpY",
-      "Likes": 0,
-      "id": 7
-    },
-    {
-      "song": "Thank You Lord",
-      "artist": "Don Moen",
-      "youtubeID": "DN3_tSDhDpY",
-      "Likes": 0,
-      "id": 8
     }
   ]
 }

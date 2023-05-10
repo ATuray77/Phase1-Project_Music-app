@@ -66,8 +66,8 @@ form.addEventListener("submit", (event) => {
   const formData = Object.fromEntries(new FormData(event.target))
 
 
-  sendToDB(formData);
-  displayPlaylist();
+  sendToDB(formData);  //everything works up to here
+  displayPlaylist(formData);
 });
 
 //function to make a POST
@@ -83,10 +83,13 @@ function sendToDB(newSong) {
       "likes": 0
     })
   }).then((res) => res.json())
-    .then(resSong => createCardElement(resSong))
+    .then(resSong => console.log(resSong))//createCardElement(resSong))
  }
+//Everything works above, now working on below
 
  //function to display Playlist
+ const playListBtn = document.querySelector("playBtn")
+ playListBtn.addEventListener('click' )
  function displayPlaylist(song) {
   const span = document.createElement("span");
   const li = document.createElement("li");
@@ -98,5 +101,9 @@ function sendToDB(newSong) {
   li.addEventListener("click", () => {
     player.src = `https://www.youtube.com/embed/${song.youtubeID}`;
   });
-
+    deleteBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (confirm("Do you want to remove this song from playlist?"))
+        e.target.parentNode.parentNode.remove();
+    })
  }
