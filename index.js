@@ -1,5 +1,6 @@
 console.log("js ..loading");
 
+//fetch request for all songs resources
 fetch("http://localhost:3000/songs")
   .then((res) => res.json())
   .then((songs) => {
@@ -59,17 +60,39 @@ function updateLikes(id, newNumberOfLikes) {
 }
 
 //TO ADD A NEW SONG: first adds an event listener to form
-const form = document.querySelector("song-form");
+const form = document.querySelector("form#song-form");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = Objects.fromEntries(new formData(event.target))
+  const formData = Object.fromEntries(new FormData(event.target))
 
-  sendItOut(formData);
+
+  sendToDB(formData);
+  displayPlaylist();
 });
 
 //function to make a POST
-function sendItOut(newSong) {
-  fetch("http://localhost:3000/songs"), {
-    
-  }
-}
+function sendToDB(newSong) {
+  fetch("http://localhost:3000/songs", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
+      ...newSong,
+      "Likes": 0
+    })
+  }).then((res) => res.json()
+  )
+  .then(resSong => createCardElement(resSong))
+ }
+
+ //function to display Playlist
+ function displayPlaylist(song) {
+  const span = document.createElement("span");
+  const li = document.createElement("li");
+  const deleteBtn = document.createElement("button");
+  //grabs song name and artist name from input
+  span.textContent = `${song.name} - ${song.artist}`;
+  deleteBtn.textContent = "🗑️";
+ }
