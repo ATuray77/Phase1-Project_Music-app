@@ -80,11 +80,10 @@ function sendToDB(newSong) {
     },
     body: JSON.stringify({
       ...newSong,
-      "Likes": 0
+      "likes": 0
     })
-  }).then((res) => res.json()
-  )
-  .then(resSong => createCardElement(resSong))
+  }).then((res) => res.json())
+    .then(resSong => createCardElement(resSong))
  }
 
  //function to display Playlist
