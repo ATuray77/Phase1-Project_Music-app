@@ -88,8 +88,8 @@ function sendToDB(newSong) {
 //Everything works above, now working on below
 
  //function to display Playlist
- const playListBtn = document.querySelector("playBtn")
- playListBtn.addEventListener('click' )
+//  const playListBtn = document.querySelector("playBtn") //later
+//  playListBtn.addEventListener('click' )  //later
  function displayPlaylist(song) {
   const span = document.createElement("span");
   const li = document.createElement("li");
@@ -105,5 +105,9 @@ function sendToDB(newSong) {
       e.stopPropagation();
       if (confirm("Do you want to remove this song from playlist?"))
         e.target.parentNode.parentNode.remove();
-    })
+    });
+
+    span.appendChild(deleteBtn);
+    li.appendChild(span);
+    playlist.appendChild(li);
  }
