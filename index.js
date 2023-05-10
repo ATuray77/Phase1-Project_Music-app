@@ -71,6 +71,7 @@ fetch("http://localhost:3000/songs")
     form.addEventListener('submit', function (e) {
       e.preventDefault()
       const formData = Object.fromEntries(new formData(e.target))
-
-
+      
+      displayPlaylist(song)
+      form.reset()
     })
