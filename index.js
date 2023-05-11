@@ -19,9 +19,9 @@ const createCardElement = (song) => {
   let h3 = document.createElement("h3");
   h3.textContent = song.artist;
 
-  let img = document.createElement("img");
-  img.src = song.image;
-  img.classList.add("tubeLink");
+  // let img = document.createElement("img");
+  // img.src = song.src;
+  // img.classList.add("tubeLink");
 
   let pLikes = document.createElement("p");
   pLikes.textContent = `${song.likes} likes`;
@@ -38,7 +38,7 @@ const createCardElement = (song) => {
   cardButton.id = song.id;
   cardButton.textContent = "Like ❤️";
 
-  card.append(h2, h3, img, pLikes, cardButton);
+  card.append(h2, h3, pLikes, cardButton);
   document.getElementById("song-collection").appendChild(card);
   //document.getElementById("card_container").appendChild("song-collection")
 };
@@ -63,10 +63,13 @@ const form2 = document.querySelector("form#song-form-2");
 form2.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = Object.fromEntries(new FormData(event.target))
+  
 
 
   sendToDB(formData);  //everything works up to here
   displayPlaylist(formData);
+
+  form.reset();
 });
 
 //function to make a POST
@@ -93,6 +96,7 @@ function sendToDB(newSong) {
     const formData = Object.fromEntries(new FormData(event.target))
 
     displayPlaylist(formData);
+    form.reset();
  });
 
 
