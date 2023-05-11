@@ -109,3 +109,26 @@ button[type="submit"]:hover {
   box-shadow: 3px 4px #4be057
 }
 
+
+
+#song-form-2 {
+  margin: 30px auto;
+  width: 300px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  float: right;
+}
+
