@@ -5,7 +5,6 @@ fetch("http://localhost:3000/songs")
   .then((res) => res.json())
   .then((songs) => {
     songs.forEach((song) => {
-      //songListMaker(song)
       createCardElement(song);
     });
   });
@@ -60,8 +59,8 @@ function updateLikes(id, newNumberOfLikes) {
 }
 
 //TO ADD A NEW SONG: first adds an event listener to form
-const form = document.querySelector("form#song-form");
-form.addEventListener("submit", (event) => {
+const form2 = document.querySelector("form#song-form-2");
+form2.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = Object.fromEntries(new FormData(event.target))
 
@@ -88,8 +87,16 @@ function sendToDB(newSong) {
 //Everything works above, now working on below
 
  //function to display Playlist
-//  const playListBtn = document.querySelector("playBtn") //later
-//  playListBtn.addEventListener('click' )  //later
+ const form = document.querySelector("form#song-form")
+ form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const formData = Object.fromEntries(new FormData(event.target))
+
+    displayPlaylist(formData);
+ });
+
+
+
  function displayPlaylist(song) {
   const span = document.createElement("span");
   const li = document.createElement("li");
