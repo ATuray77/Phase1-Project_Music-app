@@ -4,52 +4,37 @@
       "id": 1,
       "name": "Holy are you Lord",
       "artist": "Terry MacAlmon",
+      "youtubeID": "lJzt-hZyCMs",
       "likes": 5
     },
     {
       "id": 2,
       "name": "My Response",
       "artist": "Phil Thompson",
+      "youtubeID": "JC-Oci0SSpw",
       "likes": 2
     },
     {
       "id": 3,
       "name": "Adonai",
       "artist": "Nathaniel Bassey",
+      "youtubeID": "WxsHlXj-Qu8 ",
       "likes": 2
     },
+    
     {
       "id": 4,
-      "name": "Way Maker",
-      "artist": "Sinach",
-      "likes": 1
-    },
-    {
-      "id": 5,
-      "name": "Jesus At The Center",
-      "artist": "Eben",
-      "likes": 3
-    },
-    {
-      "name": "The Goodness of God",
-      "artist": "CeCe Winans",
-      "youtubeID": "9sE5kEnitqE",
-      "likes": 1,
-      "id": 6
-    },
-    {
-      "name": "10,000 Reasons",
-      "artist": "Matt Redman",
-      "youtubeID": "XtwIT8JjddM",
-      "likes": 2,
-      "id": 7
-    },
-    {
       "name": "Atmosphere shift",
       "artist": "Phil Thompson",
-      "youtubeID": "JC-Oci0SSpw",
-      "likes": 0,
-      "id": 8
+      "youtubeID": "Soa3gO7tL-c",
+      "likes": 0
+    },
+    {  
+      "id": 5,
+      "name": "Atmosphere shift",
+      "artist": "Hillsong",
+      "youtubeID": "OP-00EwLdiU",
+      "likes": 0
     }
   ]
 }

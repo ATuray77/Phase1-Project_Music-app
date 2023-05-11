@@ -15,9 +15,15 @@ const createCardElement = (song) => {
 
   let h2 = document.createElement("h2");
   h2.textContent = song.name;
+  h2.style.color ="ForestGreen"
 
   let h3 = document.createElement("h3");
   h3.textContent = song.artist;
+  h3.style.color = "FireBrick"
+
+  let h4 = document.createElement("h4");
+  h4.textContent = `Youtube ID:${song.youtubeID}`
+  h4.style.color = "Cornsilk"
 
   // let img = document.createElement("img");
   // img.src = song.src;
