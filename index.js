@@ -22,8 +22,8 @@ const createCardElement = (song) => {
   h3.style.color = "FireBrick"
 
   let h4 = document.createElement("h4");
-  h4.textContent = `Youtube ID:${song.youtubeID}`
-  h4.style.color = "Cornsilk"
+  h4.textContent = `Youtube ID:  ${song.youtubeID}`
+  h4.style.color = "DarkSlateGray"
 
   // let img = document.createElement("img");
   // img.src = song.src;
@@ -44,7 +44,7 @@ const createCardElement = (song) => {
   cardButton.id = song.id;
   cardButton.textContent = "Like ❤️";
 
-  card.append(h2, h3, pLikes, cardButton);
+  card.append(h2, h3, h4, pLikes, cardButton);
   document.getElementById("song-collection").appendChild(card);
   //document.getElementById("card_container").appendChild("song-collection")
 };
