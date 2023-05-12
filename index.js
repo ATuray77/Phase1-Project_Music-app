@@ -23,7 +23,7 @@ const createCardElement = (song) => {
 
   let h4 = document.createElement("h4");
   h4.textContent = `Youtube ID:  ${song.youtubeID}`
-  h4.style.color = "DarkSlateGray"
+  h4.style.color = "Olive"
 
   // let img = document.createElement("img");
   // img.src = song.src;

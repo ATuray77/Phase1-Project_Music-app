@@ -90,6 +90,7 @@ button[type="submit"]:hover {
   border-style: solid;
 
   overflow: hidden;
+  border-radius: 20px;
 }
 
 #player {
@@ -106,7 +107,8 @@ button[type="submit"]:hover {
   height: rem;
   display: inline-grid;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px #4be057
+  box-shadow: 3px 4px #4be057;
+  border-radius: 10px
 }
 
 
@@ -115,7 +117,7 @@ button[type="submit"]:hover {
   margin: 30px auto;
   width: 300px;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: hwb(93 24% 60% / 0.389);
   border-radius: 10px;
 }
 
