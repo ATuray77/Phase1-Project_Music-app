@@ -11,3 +11,17 @@ Features:
 [3] Music Library - It allows users to store their favorite music videos to a backend json database. This database loads when the users loads the app. For this feature to work the database must be initiated and stayed on throughout the session.
 
 [4] Likes - This featue allows users to 'like' a music video, and their 'likes' get sent to the database which updates or increases the 'like' value and reflects it on the page by increasing the 'likes' counts. 
+
+How to Use this app:
+[1] If a user only wants to listen and watch a music video, they navigate to the "Add song to PLaylist" form and fill it:
+    (a) They enter the name of the music video
+    (b) They also enter in the artist's name
+    (c) Then they enter the Youtbube music video's id
+    (d) Lastly they click on the "Create Playlist" button.
+  They can keep adding to the playlist with the above process, and delete a video on demand.
+
+[2] If a user want to add a music video to the library, they navigate to the "Add Song to Library" form and fill it:
+    (a) They enter the name of the music video
+    (b) They also enter in the artist's name
+    (c) Then they enter the Youtbube music video's id
+    (d) Lastly they click on the "Add Song to Library' button.
